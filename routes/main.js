@@ -11,4 +11,14 @@ router.get('/', (req, res, next) => {
 
 })
 
+router.get('/blog', (req, res, next) => {
+    const data = {
+        title: "Kickback-Coffee Bar and Lounge",
+        description: "Welcome to the Kickback-Coffee Bar and Lounge! We aim to create exquisite coffee and lounge style drinks "
+    }
+    
+    res.render('blog', data)
+
+})
+
 module.exports = router
